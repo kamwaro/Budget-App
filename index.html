@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -12,24 +13,33 @@
           Available Budget in <span class="budget-date">September</span>
         </h3>
         <p class="budget-amount">+ 1,628.75</p>
-        <p class="total-display income-display">+3,391.45</p>
-        <p class="total-display expense-display">-1,762.69</p>
+        <div class="total-display income-display">
+          <p>Income</p>
+          <p>+0.00</p>
+        </div>
+        <div class="total-display expense-display">
+          <p>Expenses</p>
+          <p>+0.00</p>
+        </div>
       </div>
     </header>
 
     <section class="data-inputs-section">
       <form class="data-inputs">
-        <select name="" id="">
+        <select name="" id="" class="data-input">
           <option value="+">+</option>
           <option value="-">-</option>
         </select>
 
-        <input type="text" placeholder="Add description" />
-        <input type="number" placeholder="Value" />
-        <button type="submit"></button>
+        <input type="text" placeholder="Add description" class="data-input" />
+        <input type="number" placeholder="Value" class="data-input" />
+        <button type="submit" class="data-input"></button>
       </form>
     </section>
 
-    <section class="inputs-display"></section>
+    <section class="inputs-display">
+      <div class="income__display">Income</div>
+      <div class="expense__display">EXpense</div>
+    </section>
   </body>
 </html>
