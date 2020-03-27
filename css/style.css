@@ -33,11 +33,11 @@ body {
 
 .total-display {
   display: flex;
-  width: 20em;
+  width: 24em;
   height: 2.5em;
 
   margin-bottom: 1em;
-  box-shadow: 0 0 0 0.2em rgba(56, 56, 56, 0.5);
+  box-shadow: 0 0 0 0.1em rgba(56, 56, 56, 0.5);
 }
 
 .total-display > p {
@@ -88,4 +88,21 @@ body {
 
 .inputs-display > div {
   text-transform: uppercase;
+}
+
+@media (max-width: 760px) {
+  .data-inputs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .data-input {
+    margin-bottom: 3px;
+  }
+
+  .inputs-display {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
